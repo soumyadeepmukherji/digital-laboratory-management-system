@@ -54,6 +54,9 @@ export class AuthService {
             return null
         }
 
+        console.log(JSON.parse(user));
+        
+
         return JSON.parse(user)
     }
 

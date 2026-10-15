@@ -1,0 +1,23 @@
+
+
+.dashhearder{
+    padding: 20px 10px;
+    border: 1px solid rgb(18, 251, 18);
+    border-radius: 8px;
+    box-shadow: rgba(4, 233, 65, 0.2) 0px 7px 29px 0px;
+}
+
+.dashhearder h1{
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.user__name{
+    font-size: 24px;
+}
+
+.user__name span{
+    color: rgb(0, 132, 255);
+}

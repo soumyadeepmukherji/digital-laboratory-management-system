@@ -1,1 +1,144 @@
-<p>dashboard-page works!</p>
+<section class="page">
+<app-dashboard-header></app-dashboard-header>
+<app-dashboard-cards></app-dashboard-cards>
+
+
+<section class="recent-tests">
+
+  <div class="section-header">
+    <div>
+      <span class="section-label">LAB ACTIVITY</span>
+      <h2>Recent Tests</h2>
+      <p>Latest laboratory tests and their current status</p>
+    </div>
+
+    <button class="view-all-btn">
+      View All
+      <span>→</span>
+    </button>
+  </div>
+
+
+  <div class="table-wrapper">
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>TEST ID</th>
+          <th>PATIENT</th>
+          <th>TEST TYPE</th>
+          <th>TECHNICIAN</th>
+          <th>STATUS</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>
+            <span class="test-id">T001</span>
+          </td>
+
+          <td>
+            <div class="patient">
+              <div class="patient-avatar">RS</div>
+
+              <div>
+                <span class="patient-name">Rahul Sharma</span>
+                <span class="patient-label">Patient</span>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <span class="test-type">Blood Glucose</span>
+          </td>
+
+          <td>
+            <span class="technician">Lab Technician</span>
+          </td>
+
+          <td>
+            <span class="status completed">
+              <span class="status-dot"></span>
+              Completed
+            </span>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <span class="test-id">T002</span>
+          </td>
+
+          <td>
+            <div class="patient">
+              <div class="patient-avatar">PD</div>
+
+              <div>
+                <span class="patient-name">Priya Das</span>
+                <span class="patient-label">Patient</span>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <span class="test-type">Hemoglobin</span>
+          </td>
+
+          <td>
+            <span class="technician">Lab Technician</span>
+          </td>
+
+          <td>
+            <span class="status testing">
+              <span class="status-dot"></span>
+              Testing
+            </span>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <span class="test-id">T003</span>
+          </td>
+
+          <td>
+            <div class="patient">
+              <div class="patient-avatar">AM</div>
+
+              <div>
+                <span class="patient-name">Amit Mehta</span>
+                <span class="patient-label">Patient</span>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <span class="test-type">Lipid Profile</span>
+          </td>
+
+          <td>
+            <span class="technician">Dr. Anil</span>
+          </td>
+
+          <td>
+            <span class="status pending">
+              <span class="status-dot"></span>
+              Pending
+            </span>
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</section>
+
+</section>

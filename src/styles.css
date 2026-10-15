@@ -3,7 +3,7 @@
 @import 'tailwindcss';
 
 body{
-    @apply bg-stone-800
+    @apply bg-stone-800 text-white
 }
 
 input{
@@ -20,4 +20,8 @@ label{
 
 small{
     @apply text-red-600 text-[12px]
+}
+
+.page{
+    @apply px-4 pt-2
 }
