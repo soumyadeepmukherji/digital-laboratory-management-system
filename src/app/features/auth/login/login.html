@@ -1,0 +1,28 @@
+<section class="loginpage">
+<figure>
+    <img src="assets/login.jpg" alt="security data">
+</figure>
+<div class="flex items-center justify-center">
+<div class="formwrap">
+    <small>{{loginError}}</small>
+    <h1 class="form__title">Login Form</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="formgrp" [ngClass]="{'touched': loginForm.get('email')?.value}">
+            <input type="text" id="email" formControlName="email">
+            <label for="email">Email</label>
+
+            <small *ngIf="loginForm.get('email')?.errors?.['required'] && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)">Enter the required field.</small>
+            <small *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.dirty">Give valid email.</small>
+        </div>
+        <div class="formgrp" [ngClass]="{'touched': loginForm.get('password')?.value}">
+            <input type="text" id="password" formControlName="password">
+            <label for="password">Password</label>
+        </div>
+
+        <small *ngIf="loginForm.get('password')?.errors?.['required'] && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">Enter the required field.</small>
+
+        <button type="submit" class="submit">Login</button>
+    </form>
+</div>
+</div>
+</section>

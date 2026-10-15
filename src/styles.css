@@ -1,3 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+body{
+    @apply bg-stone-800
+}
+
+input{
+    @apply w-full border border-zinc-500 px-2 py-3 rounded-[8px] text-white
+}
+
+label{
+    @apply text-white
+}
+
+.submit{
+    @apply bg-emerald-600 text-white text-lg px-3 py-2 mt-6 w-full rounded-lg cursor-pointer hover:bg-emerald-800 
+}
+
+small{
+    @apply text-red-600 text-[12px]
+}

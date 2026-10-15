@@ -1,0 +1,36 @@
+.loginpage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.formwrap{
+    border: 1px solid #fff;
+    padding: 30px;
+    border-radius: 14px;
+    width: 400px;
+}
+
+.form__title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.formgrp{
+    margin-top: 20px;
+    position: relative;
+}
+
+.formgrp label{
+    position: absolute;
+    left: 0;
+    padding: 0 10px;
+    margin-left: 5px;
+    top: 12px;
+    background-color: #292526;
+    transition: all .1s ease-in-out
+}
+
+.formgrp input:focus + label, .formgrp.touched  label{
+    top: -25%;
+    transition: all .2s ease-in;
+}
